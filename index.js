@@ -37,7 +37,6 @@
         //Switch light/dark
 
         $('#switch').on('click', function () {
-            console.log("switch");
             if ($("body").hasClass("dark")) {
                 $("body").removeClass("dark");
                 $("#switch").removeClass("switched");
@@ -47,6 +46,20 @@
                 $("#switch").addClass("switched");
             }
         });
+
+
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $(".nav-link").removeClass("active");
+            $('#'+e.target.id).addClass("active");
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top,
+                },
+                500,
+                'linear'
+            )
+        })
     });
 
 

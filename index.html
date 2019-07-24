@@ -1,9 +1,10 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>externalStyle.html</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" crossorigin="anonymous">
     <link rel = "stylesheet" type = "text/css" href = "index.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,7 +13,7 @@
     <script src="index.js"></script>
 </head>
 
-<body class="hero-anime">
+<body class="hero-anime dark">
 
 <div class="navigation-wrap bg-light start-header start-style">
     <div class="container">
@@ -37,37 +38,37 @@
 <!--                                </div>-->
 <!--                            </li>-->
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link active" id="home-nav" href="#home">Home</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" id="about-nav" href="#about">About</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Employment</a>
+                                <a class="nav-link" id="employment-nav" href="#employment">Employment</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Skills</a>
+                                <a class="nav-link" id="skills-nav" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Projects</a>
+                                <a class="nav-link" id="project-nav" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Resume</a>
+                                <a class="nav-link" id="resume-nav" href="#resume">Resume</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Thoughts</a>
+                                <a class="nav-link" id="thoughts-nav" href="#thoughts">Thoughts</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Goals</a>
+                                <a class="nav-link" id="goals-nav" href="#goals">Goals</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Social</a>
+                                <a class="nav-link" id="social-nav" href="#social">Social</a>
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" id="contact-nav" href="#contact">Contact</a>
                             </li>
                             <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                                <div id="switch">
+                                <div class="switched" id="switch">
                                     <div id="circle"></div>
                                 </div>
                             </li>
@@ -79,22 +80,60 @@
         </div>
     </div>
 </div>
-<div class="section full-height">
+
+
+<div class="section full-height" id="home">
     <div class="absolute-center">
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Hi, my name is <br><span>B</span><span>H</span><span>I</span><span>M</span><span>E</span><span>S</span><span>H</span></h1><br>
-                        <h1><span>I</span> <span>am</span> <span>happy</span> <span>to</span> <span>see</span> <span>you</span> <span>here.</span></h1>
+                        <blockquote>
+                            <h1 style="word-break: break-word">
+                                My passion lies in <span>Technology</span>, <span>Business</span> and most of all <span>finding value from Ideas</span>.
+                            </h1>
+                        </blockquote>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section mt-5">
+
+    </div>
+</div>
+
+
+<div class="section full-height" id="about">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+<!--                    <div class="col-4" style="background: #1f2029; padding: 0;">-->
+<!--                        <img src="public/me.png"/>-->
+<!--                    </div>-->
+<!--                    <div class="col-8" style="background: #FFFFFF;">-->
+<!--                        <p style="color: black; text-align: left; word-break: break-all;">-->
+<!--                            I am an Electrical Engineer with Minor in Entrepreneurship and experience in building-->
+<!--                            products. My most practiced skills include Developing Software applications, Embedded Systems,-->
+<!--                            Machine Learning and Business Execution.-->
+<!--                            I really enjoy working on ideas that I believe in and has potential in providing value to-->
+<!--                            the society and is innovative. I love challenges and therefore, am always on lookout for-->
+<!--                            ones that help me grow as an Engineer and in process provide value to the purpose I am working for.-->
+<!--                        </p>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="employment">
+    <div class="absolute-center">
+        <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+
 
                     </div>
                 </div>
@@ -102,8 +141,120 @@
         </div>
     </div>
 </div>
-<div class="my-5 py-5">
+
+
+<div class="section full-height" id="skills">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<div class="section full-height" id="projects">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="resume">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="thoughts">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="goals">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="social">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section full-height" id="contact">
+    <div class="absolute-center">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="my-5 py-5">-->
+<!--</div>-->
 
 <!--<a href="" class="link-to-portfolio" target=”_blank”></a>-->
 
