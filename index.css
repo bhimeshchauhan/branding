@@ -170,6 +170,11 @@ body{
 .full-height {
     height: 100vh;
 }
+.alternate{
+    background: rgb(129,103,169);
+    background-image: url('./public/pat-back-inv.svg');
+    background-position-x: inherit;
+}
 .over-hide {
     overflow: hidden;
 }

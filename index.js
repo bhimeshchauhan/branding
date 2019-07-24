@@ -21,6 +21,7 @@
     //Animation
 
     $(document).ready(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
         $('body.hero-anime').removeClass('hero-anime');
 
         //Menu On Hover
@@ -59,6 +60,24 @@
                 500,
                 'linear'
             )
+        });
+
+
+        // Get id to scroll and update nav
+        $(window).scroll(function() {
+            var scrollPos = $(document).scrollTop();
+            $('#navbarSupportedContent a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#navbarSupportedContent ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else{
+                    currLink.removeClass("active");
+                }
+            });
+
         })
     });
 
